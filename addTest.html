@@ -1,503 +1,805 @@
-<!DOCTYPE html>     
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Interview Mania: India&#x27;s largest site for BANK, SSC, RAILWAY exam and campus placement preparation."
+    />
+    <meta
+      name="keywords"
+      content="Aptitude questions, Reasoning Questions, BANK exam, SSC exam, campus placement, placement"
+    />
+    <meta name="author" content="Interview Mania" />
+    <title>
+      Interview Mania: India&#x27;s largest site for BANK, SSC, RAILWAY exams
+      and campus placement preparation.
+    </title>
 
-<head>                       
-  <!-- meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description"
-    content="Interview Mania: India&#x27;s largest site for BANK, SSC, RAILWAY exam and campus placement preparation.">        
-  <meta name="keywords"
-    content="Aptitude questions, Reasoning Questions, BANK exam, SSC exam, campus placement, placement">
-  <meta name="author" content="Interview Mania">
-  <title>Interview Mania: India&#x27;s largest site for BANK, SSC, RAILWAY exams and campus placement preparation.
-  </title>
+    <!-- CSS Files -->
+    <link
+      rel="stylesheet"
+      href="https://interviewmania.com/web-resources/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://interviewmania.com/web-resources/css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://interviewmania.com/web-resources/css/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://interviewmania.com/web-resources/css/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://interviewmania.com/web-resources/css/owl.theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://interviewmania.com/web-resources/css/responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://interviewmania.com/web-resources/custome-style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://interviewmania.com/web-resources/css/im/interviewmania.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://interviewmania.com/web-resources/css/im/tutorial.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://interviewmania.com/web-resources/css/im/comments.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://interviewmania.com/web-resources/css/im/ads.css"
+    />
 
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="https://interviewmania.com/web-resources/css/bootstrap.min.css">       
-  <link rel="stylesheet" href="https://interviewmania.com/web-resources/css/main.css">
-  <link rel="stylesheet" href="https://interviewmania.com/web-resources/css/animate.css">
-  <link rel="stylesheet" href="https://interviewmania.com/web-resources/css/owl.carousel.css">
-  <link rel="stylesheet" href="https://interviewmania.com/web-resources/css/owl.theme.css">
-  <link rel="stylesheet" href="https://interviewmania.com/web-resources/css/responsive.css">
-  <link rel="stylesheet" href="https://interviewmania.com/web-resources/custome-style.css">
-  <link rel="stylesheet" href="https://interviewmania.com/web-resources/css/im/interviewmania.css">
-  <link rel="stylesheet" href="https://interviewmania.com/web-resources/css/im/tutorial.css">
-  <link rel="stylesheet" href="https://interviewmania.com/web-resources/css/im/comments.css">
-  <link rel="stylesheet" href="https://interviewmania.com/web-resources/css/im/ads.css">
+    <!-- Fonts icons -->
+    <!-- <link rel="stylesheet" href="https://interviewmania.com/web-resources/css/font-awesome.min.css">  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-
-  <!-- Fonts icons -->
-  <!-- <link rel="stylesheet" href="https://interviewmania.com/web-resources/css/font-awesome.min.css">  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="apple-touch-icon" sizes="180x180"
-    href="https://interviewmania.com/web-resources/favicon-package/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32"
-    href="https://interviewmania.com/web-resources/favicon-package/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16"
-    href="https://interviewmania.com/web-resources/favicon-package/favicon-16x16.png">
-  <link rel="manifest" href="https://interviewmania.com/web-resources/favicon-package/site.webmanifest">
-  <link rel="mask-icon" href="https://interviewmania.com/web-resources/favicon-package/safari-pinned-tab.svg"
-    color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <style>
-    .geta-app {
-      font-size: 10px;
-      height: 33px;
-      width: 99px;
-      box-sizing: border-box;
-      background: white;
-      border: 1px solid #c8c8c8;
-      border-radius: 6px;
-      color: #000;
-      text-transform: uppercase;
-      position: absolute;
-      padding: 3px 5px;
-      top: 14px;
-      right: 52px;
-      line-height: 13px;
-    }
-
-    .geta-app span {
-      color: #e1261c;
-      display: block;
-    }
-
-    .geta-app img {
-      float: left;
-      padding-right: 7px;
-      max-width: 100%;
-      border: 0;
-    }
-
-    
-    .challange_box{
-      background-image: url(images/2.png);  
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding: 25px;
-      border-radius: 15px;     
-      position: relative;     
-      z-index: 0;      
-    }
-
-    .overlay{
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #0000005a;        
-      border-radius: 15px; 
-      z-index: 1;
-    }
-    .img-overlay{   
-      position: absolute;   
-      top: -20px;
-      right: -20px;
-      width: 60px;
-      height: auto;   
-      border-radius: 15px; 
-      z-index: 10;
-      object-fit: cover;
-    }
-   
-    .challange_text{
-      position: relative;
-      z-index: 10;
-    }
-
-    .challange_box2{
-      background-image: url(images/3.png);   
-    }
-    .challange_box3{   
-      background-image: url(images/8.png);      
-    }
-    .challange_box .challange_text h4 {
-      color: #fff;
-      font-size: 28px;   
-      font-weight: normal;
-      line-height: 37px;
-    }
-    .challange_box .challange_text h4:hover{
-      cursor: pointer;
-      color: #EB586F;  
-      transition: .3s ease-in;   
-    }
-    .challange_box .challange_text p {
-      color: #fff;
-      font-size: 18px;
-      padding: 4px 0;       
-    }
-    .challange_box .challange_text .c_btn {   
-      background: #e1314d;      
-      border-radius: 6px;
-      font-size: 15px;
-      color: #fff; 
-      padding: 6px 15px;
-      text-transform: capitalize;
-      margin-top: 12px;
-      box-shadow: 0 20px 20px -15px rgba(144, 40, 64, 0.5);
-    }  
-    .challange_box .challange_text .c_btn:hover{
-       background-color: #E33400;        
-       color: #fff;  
-       transition: .3s ease-in;    
-    }
-    ::placeholder{
-      color:  #444444 !important;  
-    }
-    @media (max-width:991px){
-      .m_challange{  
-        margin-bottom: 15px;    
-      }     
-    
-    }
-    @media (max-width:575px){           
-      .challange_box {
-        padding: 10px 15px;              
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://interviewmania.com/web-resources/favicon-package/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://interviewmania.com/web-resources/favicon-package/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://interviewmania.com/web-resources/favicon-package/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="https://interviewmania.com/web-resources/favicon-package/site.webmanifest"
+    />
+    <link
+      rel="mask-icon"
+      href="https://interviewmania.com/web-resources/favicon-package/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <style>
+      .geta-app {
+        font-size: 10px;
+        height: 33px;
+        width: 99px;
+        box-sizing: border-box;
+        background: white;
+        border: 1px solid #c8c8c8;
+        border-radius: 6px;
+        color: #000;
+        text-transform: uppercase;
+        position: absolute;
+        padding: 3px 5px;
+        top: 14px;
+        right: 52px;
+        line-height: 13px;
       }
-     .challange_box .challange_text h4 {     
-        font-size: 17px;  
-        line-height: inherit !important;     
-        margin-bottom: 0;
-      }   
-     .challange_box .challange_text p { 
-      margin: 0; 
-      font-size: 14px;
-      padding-top: 5px !important;
-    }
-    .img-overlay{      
-      top: -10px;  
-      right: -9px;
-      width: 45px;          
-    }
-    .challange_box_p{
-      padding-top: 23px !important;
-    }
-    .features_p{
-      padding-top: 23px !important;
-    }
-    .challange_box .challange_text .c_btn {
-      margin-top: 4px;  
-    }
-  }          
-  </style>
-  <script src="https://interviewmania.com/web-resources/js/im/lazysizes.min.js" async></script>
-  <script type="text/javascript">
-    (function (c, l, a, r, i, t, y) {
-      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-    })(window, document, "clarity", "script", "fze9tybxed");
-  </script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8003676126645778"
-    crossorigin="anonymous"></script>
-</head>
 
-<body>
-  <!-- Page Wrapper Start -->
-  <div class="wrapper" style="padding-bottom:0px;">
-    <!-- Content Area Start -->
-    <div id="content" style="padding-bottom:0px;">
-      <div class="row">
-        <div class="col-12">
-          <nav class="full-width navbar navbar-expand-lg fixed-top scrolling-navbar bg-black">
-            <div class="container">
-              <a class="navbar-brand" href="/https://interviewmania.com/"><img
-                  src="https://interviewmania.com/web-resources/img/interviewmania-logo.png" alt=""
-                  class="main-logo-size"></a>
-              <a href="https://play.google.com/store/apps/details?id=com.amibba.interviewmania"
-                class="geta-app d-lg-none" style="text-align:center;" target="_blank"><img
-                  src="https://interviewmania.com\web-resources\img\app-download.png"
-                  alt=""><span>Download</span>App</a>
-              <button class="navbar-toggler" style="color:#e63d4f;" type="button" data-toggle="collapse"
-                data-target="#navbar2" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbar2">
-                <ul class="navbar-nav">
+      .geta-app span {
+        color: #e1261c;
+        display: block;
+      }
 
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
-                      aria-expanded="false">Academic Resource</a>
-                    <div class="dropdown-menu" style="border: 1px solid #EB586F;">
-                      <a class="dropdown-item" href="https://interviewmania.com/aptitude">Aptitude</a>
-                      <a class="dropdown-item" href="https://interviewmania.com/data-interpretation">Data
-                        Interpretation</a>
-                      <a class="dropdown-item" href="https://interviewmania.com/verbal-reasoning">Verbal Reasoning</a>
-                      <a class="dropdown-item" href="https://interviewmania.com/non-verbal-reasoning">Non Verbal
-                        Reasoning</a>
-                      <a class="dropdown-item" href="https://interviewmania.com/verbal-ability">Verbal Ability</a>
-                      <a class="dropdown-item" href="https://interviewmania.com/programming">Programming</a>
-                      <a class="dropdown-item" href="https://interviewmania.com/general-knowledge">General Knowledge</a>
-                      <a class="dropdown-item" href="https://interviewmania.com/puzzle">Puzzle</a>
-                    </div>
-                  </li>
+      .geta-app img {
+        float: left;
+        padding-right: 7px;
+        max-width: 100%;
+        border: 0;
+      }
 
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
-                      aria-expanded="false">Engineering</a>
-                    <div class="dropdown-menu" style="border: 1px solid #EB586F;">
-                      <a class="dropdown-item" href="/https://interviewmania.com/computer-engineering-gate">Computer
-                        Engineering</a>
-                      <a class="dropdown-item"
-                        href="/https://interviewmania.com/electronics-and-communication">Electronics and
-                        Communication</a>
-                      <a class="dropdown-item" href="/https://interviewmania.com/electrical-engineering">Electrical
-                        Engineering</a>
-                      <a class="dropdown-item" href="/https://interviewmania.com/mechanical-engineering">Mechanical
-                        Engineering</a>
-                      <a class="dropdown-item" href="/https://interviewmania.com/civil-engineering">Civil
-                        Engineering</a>
-                      <!--<a class="dropdown-item" href="/https://interviewmania.com/chemical-engineering">Chemical Engineering</a>-->
-                      <a class="dropdown-item" href="/https://interviewmania.com/biotechnology-bt">Biotechnology</a>
-                      <a class="dropdown-item" href="/https://interviewmania.com/architecture-and-planning">Architecture
-                        & Planning</a>
-                    </div>
-                  </li>
+      .challange_box {
+        background-image: url(images/2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 25px;
+        border-radius: 15px;
+        position: relative;
+        z-index: 0;
+      }
 
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
-                      aria-expanded="false">Online Test</a>
-                    <div class="dropdown-menu" style="border: 1px solid #EB586F;">
-                      <a class="dropdown-item" href="/https://interviewmania.com/online-test-list/aptitude">Aptitude
-                        Test</a>
-                      <a class="dropdown-item"
-                        href="/https://interviewmania.com/online-test-list/data-interpretation">Data Interpretation
-                        Test</a>
-                      <a class="dropdown-item"
-                        href="/https://interviewmania.com/online-test-list/verbal-reasoning">Verbal Reasoning Test</a>
-                      <a class="dropdown-item"
-                        href="/https://interviewmania.com/online-test-list/non-verbal-reasoning">Non Verbal Reasoning
-                        Test</a>
-                      <a class="dropdown-item" href="/https://interviewmania.com/online-test-list/verbal-ability">Verbal
-                        Ability Test</a>
-                      <!--<a class="dropdown-item" href="/https://interviewmania.com/online-test/online-programming-test">Programming Quiz</a>
+      .overlay {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0000005a;
+        border-radius: 15px;
+        z-index: 1;
+      }
+      .img-overlay {
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        width: 60px;
+        height: auto;
+        border-radius: 15px;
+        z-index: 10;
+        object-fit: cover;
+      }
+
+      .challange_text {
+        position: relative;
+        z-index: 10;
+      }
+
+      .challange_box2 {
+        background-image: url(images/3.png);
+      }
+      .challange_box3 {
+        background-image: url(images/8.png);
+      }
+      .challange_box .challange_text h4 {
+        color: #fff;
+        font-size: 28px;
+        font-weight: normal;
+        line-height: 37px;
+      }
+      .challange_box .challange_text h4:hover {
+        cursor: pointer;
+        color: #eb586f;
+        transition: 0.3s ease-in;
+      }
+      .challange_box .challange_text p {
+        color: #fff;
+        font-size: 18px;
+        padding: 4px 0;
+      }
+      .challange_box .challange_text .c_btn {
+        background: #e1314d;
+        border-radius: 6px;
+        font-size: 15px;
+        color: #fff;
+        padding: 6px 15px;
+        text-transform: capitalize;
+        margin-top: 12px;
+        box-shadow: 0 20px 20px -15px rgba(144, 40, 64, 0.5);
+      }
+      .challange_box .challange_text .c_btn:hover {
+        background-color: #e33400;
+        color: #fff;
+        transition: 0.3s ease-in;
+      }
+      ::placeholder {
+        color: #444444 !important;
+      }
+      @media (max-width: 991px) {
+        .m_challange {
+          margin-bottom: 15px;
+        }
+      }
+      @media (max-width: 575px) {
+        .challange_box {
+          padding: 10px 15px;
+        }
+        .challange_box .challange_text h4 {
+          font-size: 17px;
+          line-height: inherit !important;
+          margin-bottom: 0;
+        }
+        .challange_box .challange_text p {
+          margin: 0;
+          font-size: 14px;
+          padding-top: 5px !important;
+        }
+        .img-overlay {
+          top: -10px;
+          right: -9px;
+          width: 45px;
+        }
+        .challange_box_p {
+          padding-top: 23px !important;
+        }
+        .features_p {
+          padding-top: 23px !important;
+        }
+        .challange_box .challange_text .c_btn {
+          margin-top: 4px;
+        }
+      }
+    </style>
+    <script
+      src="https://interviewmania.com/web-resources/js/im/lazysizes.min.js"
+      async
+    ></script>
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "fze9tybxed");
+    </script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8003676126645778"
+      crossorigin="anonymous"
+    ></script>
+  </head>       
+
+  <body>
+    <!-- Page Wrapper Start -->
+    <div class="wrapper" style="padding-bottom: 0px">
+      <!-- Content Area Start -->
+      <div id="content" style="padding-bottom: 0px">
+        <div class="row">
+          <div class="col-12">
+            <nav
+              class="full-width navbar navbar-expand-lg fixed-top scrolling-navbar bg-black"
+            >
+              <div class="container">
+                <a class="navbar-brand" href="/https://interviewmania.com/"
+                  ><img
+                    src="https://interviewmania.com/web-resources/img/interviewmania-logo.png"
+                    alt=""
+                    class="main-logo-size"
+                /></a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.amibba.interviewmania"
+                  class="geta-app d-lg-none"
+                  style="text-align: center"
+                  target="_blank"
+                  ><img
+                    src="https://interviewmania.com\web-resources\img\app-download.png"
+                    alt=""
+                  /><span>Download</span>App</a
+                >
+                <button
+                  class="navbar-toggler"
+                  style="color: #e63d4f"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbar2"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <i class="fa fa-bars"></i>
+                </button>
+                <div
+                  class="collapse navbar-collapse justify-content-end"
+                  id="navbar2"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >Academic Resource</a
+                      >
+                      <div
+                        class="dropdown-menu"
+                        style="border: 1px solid #eb586f"
+                      >
+                        <a
+                          class="dropdown-item"
+                          href="https://interviewmania.com/aptitude"
+                          >Aptitude</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="https://interviewmania.com/data-interpretation"
+                          >Data Interpretation</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="https://interviewmania.com/verbal-reasoning"
+                          >Verbal Reasoning</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="https://interviewmania.com/non-verbal-reasoning"
+                          >Non Verbal Reasoning</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="https://interviewmania.com/verbal-ability"
+                          >Verbal Ability</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="https://interviewmania.com/programming"
+                          >Programming</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="https://interviewmania.com/general-knowledge"
+                          >General Knowledge</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="https://interviewmania.com/puzzle"
+                          >Puzzle</a
+                        >
+                      </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >Engineering</a
+                      >
+                      <div
+                        class="dropdown-menu"
+                        style="border: 1px solid #eb586f"
+                      >
+                        <a
+                          class="dropdown-item"
+                          href="/https://interviewmania.com/computer-engineering-gate"
+                          >Computer Engineering</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="/https://interviewmania.com/electronics-and-communication"
+                          >Electronics and Communication</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="/https://interviewmania.com/electrical-engineering"
+                          >Electrical Engineering</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="/https://interviewmania.com/mechanical-engineering"
+                          >Mechanical Engineering</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="/https://interviewmania.com/civil-engineering"
+                          >Civil Engineering</a
+                        >
+                        <!--<a class="dropdown-item" href="/https://interviewmania.com/chemical-engineering">Chemical Engineering</a>-->
+                        <a
+                          class="dropdown-item"
+                          href="/https://interviewmania.com/biotechnology-bt"
+                          >Biotechnology</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="/https://interviewmania.com/architecture-and-planning"
+                          >Architecture & Planning</a
+                        >
+                      </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >Online Test</a
+                      >
+                      <div
+                        class="dropdown-menu"
+                        style="border: 1px solid #eb586f"
+                      >
+                        <a
+                          class="dropdown-item"
+                          href="/https://interviewmania.com/online-test-list/aptitude"
+                          >Aptitude Test</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="/https://interviewmania.com/online-test-list/data-interpretation"
+                          >Data Interpretation Test</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="/https://interviewmania.com/online-test-list/verbal-reasoning"
+                          >Verbal Reasoning Test</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="/https://interviewmania.com/online-test-list/non-verbal-reasoning"
+                          >Non Verbal Reasoning Test</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="/https://interviewmania.com/online-test-list/verbal-ability"
+                          >Verbal Ability Test</a
+                        >
+                        <!--<a class="dropdown-item" href="/https://interviewmania.com/online-test/online-programming-test">Programming Quiz</a>
                         <a class="dropdown-item" href="/https://interviewmania.com/online-test/online-general-knowledge-test">General Knowledge Quiz</a>
 						<a class="dropdown-item" href="/https://interviewmania.com/online-test/online-puzzle-test">Puzzle Quiz</a>-->
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/https://interviewmania.com/exam-list">Exams</a>
-                  </li>
-                  <!--<li class="nav-item">
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="/https://interviewmania.com/exam-list"
+                        >Exams</a
+                      >
+                    </li>
+                    <!--<li class="nav-item">
                       <a class="nav-link" href="/https://interviewmania.com/#placement">Placement</a>
                     </li>-->
 
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
-                      aria-expanded="false">More</a>
-                    <div class="dropdown-menu" style="border: 1px solid #EB586F;">
-                      <!--<a class="dropdown-item" href="https://resume.interviewmania.com">Resume Builder</a>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >More</a
+                      >
+                      <div
+                        class="dropdown-menu"
+                        style="border: 1px solid #eb586f"
+                      >
+                        <!--<a class="dropdown-item" href="https://resume.interviewmania.com">Resume Builder</a>
                         <a class="dropdown-item" href="/https://interviewmania.com/login">Login</a>
 						<a class="dropdown-item" href="/https://interviewmania.com/logout">Logout</a>-->
-                      <a class="dropdown-item" href="/https://interviewmania.com/full-forms">Full Forms</a>    
-                      <a class="dropdown-item" href="https://hindi.interviewmania.com">हिंदी </a>
-                    </div>
-                  </li>
-
-                </ul>
+                        <a
+                          class="dropdown-item"
+                          href="/https://interviewmania.com/full-forms"
+                          >Full Forms</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="https://hindi.interviewmania.com"
+                          >हिंदी
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
+            </nav>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-lg-10 col-md-12 col-xs-12">
+              <form data-toggle="validator" novalidate="true">
+                <div class="form-group row" style="margin-bottom: 0rem">
+                  <label class="col-sm-2 col-form-label text-label-alignment"
+                    >
+                  </label>   
+                  <div class="col-sm-7" style="padding: 110px 0 30px 0">
+                    <h2
+                      class="heading-title text-center"
+                      style="color: #eb586f"
+                    >
+                      Add Test
+                    </h2>
+                  </div>
+                </div>
+                <div class="form-group row" style="margin-bottom: 0rem">
+                  <label class="col-sm-2 col-form-label text-right"
+                    ><strong>Test Type :</strong></label
+                  >
+                  <div class="col-sm-7">
+                    <select
+                      name="primary_topic"
+                      id="primary_topic"
+                      class="form-control"
+                    >
+                      <option value="">Select</option>
+                      <option value="0">General Test</option>
+                      <option value="0">Test For Topic</option>
+                      <option value="0">Test For Primary Topic</option>
+                      <option value="0">Challange</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-group row" style="margin-bottom: 0rem">
+                  <label class="col-sm-2 col-form-label text-right"
+                    ><strong>Test Name :</strong></label
+                  >
+                  <div class="col-sm-7">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputText1"
+                      aria-describedby="textlHelp"
+                      placeholder="Test Name"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-group row" style="margin-bottom: 0rem">
+                  <label class="col-sm-2 col-form-label text-right"
+                    ><strong>Primary Topic :</strong></label
+                  >
+                  <div class="col-sm-7">
+                    <select
+                      name="primary_topic"
+                      id="primary_topic"
+                      class="form-control"
+                    >
+                      <option value="">Select</option>
+                      <option value="1143">
+                        Electronics and Communication
+                      </option>
+                      <option value="1162">Electrical Engineering</option>
+                      <option value="1274">Mechanical Engineering</option>
+                      <option value="1275">Engineering Mathematics</option>
+                      <option value="1299">Civil Engineering</option>
+                      <option value="1308">Computer Engineering</option>
+                      <option value="1371">Chemical Engineering</option>
+                      <option value="1372">Architecture and Planning</option>
+                      <option value="1375">Biotechnology(BT)</option>
+                      <option value="1400">Advanced Biology</option>
+                      <option value="1441">Advanced physics</option>
+                      <option value="1477">HC Verma Solutions</option>
+                      <option value="1527">Advanced Chemistry</option>
+                      <option value="1562">Question Answers</option>
+                      <option value="1563">Interview Questions</option>
+                      <option value="1598">Language</option>
+                      <option value="1611">Engineering Mathematics</option>
+                      <option value="1">Aptitude</option>
+                      <option value="2">Reasoning</option>
+                      <option value="267">Verbal Ability</option>
+                      <option value="3">Puzzle</option>
+                      <option value="4">Programming</option>
+                      <option value="5">General Knowledge</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-group row" style="margin-bottom: 0rem">
+                  <label class="col-sm-2 col-form-label text-right"
+                    ><strong>Topic :</strong></label
+                  >
+                  <div class="col-sm-7">
+                    <select
+                      name="topic"
+                      id="topic"
+                      class="form-control"
+                      data-error="Please select this field"
+                    >
+                      <option value="">Select</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-group row" style="margin-bottom: 0rem">
+                  <label class="col-sm-2 col-form-label text-right"
+                    ><strong>Challange :</strong></label
+                  >
+                  <div class="col-sm-7">
+                    <select
+                      name="primary_topic"
+                      id="primary_topic"
+                      class="form-control"
+                    >
+                      <option value="">Select</option>
+                      <option value="0">New Challange</option>
+                      <option value="0">Challange 1</option>
+                      <option value="0">Challange 2</option>
+                      <option value="0">Challange 3</option>
+                      <option value="0">Challange 4</option>
+                      <option value="0">Challange 5</option>
+                      <option value="0">Challange 6</option>
+                      <option value="0">Challange 7</option>
+                      <option value="0">Challange 8</option>
+                      <option value="0">Challange 9</option>
+                      <option value="0">Challange 10</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-group row" style="margin-bottom: 0rem">
+                  <label class="col-sm-2 col-form-label text-right"
+                    ><strong>Challange Name :</strong></label
+                  >
+                  <div class="col-sm-7">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputText1"
+                      aria-describedby="textlHelp"
+                      placeholder="Challange Name"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-group row" style="margin-bottom: 0rem">
+                  <label class="col-sm-2 col-form-label text-right"
+                    ><strong>Question :</strong></label
+                  >
+                  <div class="col-sm-7">
+                    <textarea
+                      id="question"
+                      class="form-control"
+                      rows="5"
+                      required=""
+                      data-error="Please fill out this field"
+                    ></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-group row" style="margin-bottom: 0rem">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-7">
+                    <center>
+                      <button
+                        type="button"
+                        id="add_question_button"
+                        class="btn btn-md btn-common btn-form-submit"
+                      >
+                        Create Test
+                      </button>
+                    </center>
+                    <br /><br />
+                    <div
+                      class="alert alert-danger"
+                      role="alert"
+                      id="error_msg"
+                      style=""
+                    >
+                      <strong>Error! </strong>Please select a primary Topic
+                    </div>
+                    <div
+                      class="alert alert-success"
+                      id="success_msg"
+                      style="display: none"
+                    ></div>
+                  </div>
+                  <div class="col-sm-3"></div>
+                </div>
+              </form>
             </div>
-          </nav>
+          </div>
         </div>
       </div>
-
-
-    
-     <div class="container">
-      <div class="row justify-content-md-center">
-        <div class="col-lg-10 col-md-12 col-xs-12">
-           <form data-toggle="validator" novalidate="true">
-              <div class="form-group row" style="margin-bottom:0rem;">
-                 <label class="col-sm-2 col-form-label text-label-alignment"><strong></strong></label>
-                 <div class="col-sm-7" style="padding:110px 0 30px 0;">
-                    <h2 class="heading-title text-center" style="color:#EB586F;">Add Test</h2>     
-                 </div>
-              </div>
-              <div class="form-group row" style="margin-bottom:0rem;">
-                 <label class="col-sm-2 col-form-label text-right"><strong>Test Type :</strong></label>    
-                 <div class="col-sm-7">
-                    <select name="primary_topic" id="primary_topic" class="form-control">
-                       <option value="">Select</option>
-                                                                       <option value="0">General Test</option> 
-                                                                       <option value="0">Test For Topic</option>   
-                                                                       <option value="0">Test For Primary Topic</option>     
-                                                                       <option value="0">Challange</option>   
-                                                                       
-                                                               </select>
-                    <div class="help-block with-errors"></div>
-                 </div>
-              </div>
-
-              <div class="form-group row" style="margin-bottom:0rem;">
-                <label class="col-sm-2 col-form-label text-right"><strong>Test Name :</strong></label>          
-                <div class="col-sm-7">
-                  <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textlHelp" placeholder="Test Name">
-                   <div class="help-block with-errors"></div>
-                </div>
-             </div>
-
-
-             <div class="form-group row" style="margin-bottom:0rem;">
-              <label class="col-sm-2 col-form-label text-right"><strong>Primary Topic :</strong></label>
-              <div class="col-sm-7">
-     <select name="primary_topic" id="primary_topic" class="form-control">
-      <option value="">Select</option>
-                        <option value="1143">Electronics and Communication</option>
-                        <option value="1162">Electrical Engineering</option>
-                        <option value="1274">Mechanical Engineering</option>
-                        <option value="1275">Engineering Mathematics</option>
-                        <option value="1299">Civil Engineering</option>
-                        <option value="1308">Computer Engineering </option>
-                        <option value="1371">Chemical Engineering</option>
-                        <option value="1372">Architecture and Planning</option>
-                        <option value="1375">Biotechnology(BT)</option>
-                        <option value="1400">Advanced Biology</option>
-                        <option value="1441">Advanced physics</option>
-                        <option value="1477">HC Verma Solutions</option>
-                        <option value="1527">Advanced Chemistry</option>
-                        <option value="1562">Question Answers</option>
-                        <option value="1563">Interview Questions</option>
-                        <option value="1598">Language</option>
-                        <option value="1611">Engineering Mathematics</option>
-                        <option value="1">Aptitude</option>
-                        <option value="2">Reasoning</option>
-                        <option value="267">Verbal Ability</option>
-                        <option value="3">Puzzle</option>
-                        <option value="4">Programming</option>
-                        <option value="5">General Knowledge</option>
-                    </select>
-                 <div class="help-block with-errors"></div>
-              </div>
-           </div>
-
-
-           <div class="form-group row" style="margin-bottom:0rem;">
-            <label class="col-sm-2 col-form-label text-right"><strong>Topic :</strong></label>
-            <div class="col-sm-7">
-               <select name="topic" id="topic" class="form-control" data-error="Please select this field">
-                  <option value="">Select</option> 
-               </select>
-               <div class="help-block with-errors"></div>
-            </div>
-         </div>
-
-
-         <div class="form-group row" style="margin-bottom:0rem;">
-          <label class="col-sm-2 col-form-label text-right"><strong>Challange :</strong></label>        
-          <div class="col-sm-7">
-             <select name="primary_topic" id="primary_topic" class="form-control">
-                <option value="">Select</option>
-                                                                <option value="0">New Challange</option>    
-                                                                <option value="0">Challange 1</option>   
-                                                                <option value="0">Challange 2</option>
-                                                                <option value="0">Challange 3</option>
-                                                                <option value="0">Challange 4</option>
-                                                                <option value="0">Challange 5</option>
-                                                                <option value="0">Challange 6</option>
-                                                                <option value="0">Challange 7</option>
-                                                                <option value="0">Challange 8</option>
-                                                                <option value="0">Challange 9</option>
-                                                                <option value="0">Challange 10</option>     
-                                                                 
-                                                        </select>
-             <div class="help-block with-errors"></div>
-          </div>
-       </div>  
-
-       <div class="form-group row" style="margin-bottom:0rem;">
-        <label class="col-sm-2 col-form-label text-right"><strong>Challange Name :</strong></label>          
-        <div class="col-sm-7">
-          <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textlHelp" placeholder="Challange Name">
-           <div class="help-block with-errors"></div>
-        </div>
-     </div>
-             
-              
-             
-              <div class="form-group row" style="margin-bottom:0rem;">
-                 <label class="col-sm-2 col-form-label text-right"><strong>Question :</strong></label>
-                 <div class="col-sm-7">
-                    <textarea id="question" class="form-control" rows="5" required="" data-error="Please fill out this field"></textarea>
-                    <div class="help-block with-errors"></div>
-                 </div>
-               
-              </div>
-
-
-              <div class="form-group row" style="margin-bottom:0rem;">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-7">
-                   <center><button type="button" id="add_question_button" class="btn btn-md btn-common btn-form-submit">Create Test</button></center>   
-        <br><br>
-        <div class="alert alert-danger" role="alert" id="error_msg" style=""><strong>Error! </strong>Please select a primary Topic</div>
-      <div class="alert alert-success" id="success_msg" style="display:none;"></div>
-                </div>
-                <div class="col-sm-3"></div>
-             </div>
-              
-             
- 
-           </form>
-        </div>
-     </div>
-    </div>        
-
-
-
-
-
-
-       
-      
-      
-        
-
-        
-       
-
-
-        <footer class="footer-3">
+      <footer class="footer-3">
+        <div class="container">
           <div class="container">
-            <div class="container">
-              <div class="row section">
-                <div class="col-lg-3 col-md-3 col-xs-12">
-                  <h3>Study Zone</h3>
-                  <ul>
-                    <li><a href="/https://interviewmania.com/aptitude">Aptitude</a></li>
-                    <li><a href="/https://interviewmania.com/data-interpretation">Data Interpretation</a></li>
-                    <li><a href="/https://interviewmania.com/verbal-reasoning">Verbal Reasoning</a></li>
-                    <li><a href="/https://interviewmania.com/non-verbal-reasoning">Non Verbal Reasoning</a></li>
-                    <li><a href="/https://interviewmania.com/verbal-ability">Verbal Ability</a></li>
-                    <li><a href="/https://interviewmania.com/programming">Programming</a></li>
-                    <li><a href="/https://interviewmania.com/general-knowledge">General Knowledge</a></li>
-                    <li><a href="/https://interviewmania.com/puzzle">Puzzle</a></li>
-                  </ul>
-                </div>
+            <div class="row section">
+              <div class="col-lg-3 col-md-3 col-xs-12">
+                <h3>Study Zone</h3>
+                <ul>
+                  <li>
+                    <a href="/https://interviewmania.com/aptitude">Aptitude</a>
+                  </li>
+                  <li>
+                    <a href="/https://interviewmania.com/data-interpretation"
+                      >Data Interpretation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/https://interviewmania.com/verbal-reasoning"
+                      >Verbal Reasoning</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/https://interviewmania.com/non-verbal-reasoning"
+                      >Non Verbal Reasoning</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/https://interviewmania.com/verbal-ability"
+                      >Verbal Ability</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/https://interviewmania.com/programming"
+                      >Programming</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/https://interviewmania.com/general-knowledge"
+                      >General Knowledge</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/https://interviewmania.com/puzzle">Puzzle</a>
+                  </li>
+                </ul>
+              </div>
 
-                <div class="col-lg-3 col-md-3 col-xs-12">
-                  <h3>Engineering</h3>
-                  <ul>
-                    <li><a href="/https://interviewmania.com/computer-engineering-gate">Computer Engineering</a></li>
-                    <li><a href="/https://interviewmania.com/electronics-and-communication">Electronics and
-                        Communication</a></li>
-                    <li><a href="/https://interviewmania.com/electrical-engineering">Electrical Engineering</a></li>
-                    <li><a href="/https://interviewmania.com/mechanical-engineering">Mechanical Engineering</a></li>
-                    <li><a href="/https://interviewmania.com/civil-engineering">Civil Engineering</a></li>
-                    <!--<li><a href="/https://interviewmania.com/chemical-engineering">Chemical Engineering</a></li>-->
-                    <li><a href="/https://interviewmania.com/biotechnology-bt">Biotechnology</a></li>
-                    <li><a href="/https://interviewmania.com/architecture-and-planning">Architecture & Planning</a></li>
-                  </ul>
-                </div>
+              <div class="col-lg-3 col-md-3 col-xs-12">
+                <h3>Engineering</h3>
+                <ul>
+                  <li>
+                    <a
+                      href="/https://interviewmania.com/computer-engineering-gate"
+                      >Computer Engineering</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/https://interviewmania.com/electronics-and-communication"
+                      >Electronics and Communication</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/https://interviewmania.com/electrical-engineering"
+                      >Electrical Engineering</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/https://interviewmania.com/mechanical-engineering"
+                      >Mechanical Engineering</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/https://interviewmania.com/civil-engineering"
+                      >Civil Engineering</a
+                    >
+                  </li>
+                  <!--<li><a href="/https://interviewmania.com/chemical-engineering">Chemical Engineering</a></li>-->
+                  <li>
+                    <a href="/https://interviewmania.com/biotechnology-bt"
+                      >Biotechnology</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/https://interviewmania.com/architecture-and-planning"
+                      >Architecture & Planning</a
+                    >
+                  </li>
+                </ul>
+              </div>
 
-                <div class="col-lg-3 col-md-3 col-xs-12">
-                  <h3>Exams</h3>
-                  <!--<ul>
+              <div class="col-lg-3 col-md-3 col-xs-12">
+                <h3>Exams</h3>
+                <!--<ul>
 					<li><a href="/https://interviewmania.com/exams/banking">Banking Exams</a></li>
 					<li><a href="/https://interviewmania.com/exams/ssc">SSC Exams</a></li>
 					<li><a href="/https://interviewmania.com/exams/teaching">Teaching Exams</a></li>
@@ -507,31 +809,46 @@
 					<li><a href="/https://interviewmania.com/exams/state-examinations">State Exams</a></li>
 					<li><a href="/https://interviewmania.com/exams/other-government-jobs">Other Govt Exams</a></li>
                 </ul>-->
-                </div>
-                <div class="col-lg-3 col-md-3 col-xs-12">
-                  <h3>Online Test</h3>
-                  <ul>
-                    <li><a href="/https://interviewmania.com/online-test-list/aptitude">Aptitude Test</a></li>
-                    <li><a href="/https://interviewmania.com/online-test-list/data-interpretation">Data Interpretation
-                        Test</a></li>
-                    <li><a href="/https://interviewmania.com/online-test-list/verbal-reasoning">Verbal Reasoning
-                        Test</a>
-                    </li>
-                    <li><a href="/https://interviewmania.com/online-test-list/non-verbal-reasoning">Non Verbal Reasoning
-                        Test</a></li>
-                    <li><a href="/https://interviewmania.com/online-test-list/verbal-ability">Verbal Ability Test</a>
-                    </li>
-                  </ul>
-                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-xs-12">
+                <h3>Online Test</h3>
+                <ul>
+                  <li>
+                    <a
+                      href="/https://interviewmania.com/online-test-list/aptitude"
+                      >Aptitude Test</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/https://interviewmania.com/online-test-list/data-interpretation"
+                      >Data Interpretation Test</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/https://interviewmania.com/online-test-list/verbal-reasoning"
+                      >Verbal Reasoning Test</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/https://interviewmania.com/online-test-list/non-verbal-reasoning"
+                      >Non Verbal Reasoning Test</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/https://interviewmania.com/online-test-list/verbal-ability"
+                      >Verbal Ability Test</a
+                    >
+                  </li>
+                </ul>
+              </div>
 
-
-
-
-
-
-                <hr />
-                <div class="row section">
-                  <!--<div class="col-lg-3 col-md-3 col-xs-12">
+              <hr />
+              <div class="row section">
+                <!--<div class="col-lg-3 col-md-3 col-xs-12">
                 <h3>Study Zone</h3>
                 <ul>
 					<li><a href="/https://interviewmania.com/aptitude">Aptitude</a></li>
@@ -565,62 +882,87 @@
 					<li><a href="/https://interviewmania.com/online-test-list/verbal-ability">Verbal Ability Test</a></li>
                 </ul>
               </div> -->
-                  <div class="col-lg-3 col-md-3 col-xs-12">
-                    <h3>Useful Links</h3>
-                    <ul>
-                      <!--<li><a href="/https://interviewmania.com/ncert-solutions">NCERT Solutions</a></li>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                  <h3>Useful Links</h3>
+                  <ul>
+                    <!--<li><a href="/https://interviewmania.com/ncert-solutions">NCERT Solutions</a></li>
                   <li><a href="/https://interviewmania.com/previous-year-question-papers">Previous Year Question Papers</a></li>
                   <li><a href="/https://interviewmania.com/download">Download</a></li>-->
-                      <li><a href="/https://interviewmania.com/full-forms">Full Forms</a></li>
-                      <li><a href="/https://interviewmania.com/article">Recent Articles</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-xs-12">
-                    <h3>Other Links</h3>
-                    <ul>
-                      <!--<li><a href="/https://interviewmania.com/ncert-solutions">NCERT Solutions</a></li>
+                    <li>
+                      <a href="/https://interviewmania.com/full-forms"
+                        >Full Forms</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/https://interviewmania.com/article"
+                        >Recent Articles</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                  <h3>Other Links</h3>
+                  <ul>
+                    <!--<li><a href="/https://interviewmania.com/ncert-solutions">NCERT Solutions</a></li>
                   <li><a href="/https://interviewmania.com/previous-year-question-papers">Previous Year Question Papers</a></li>
                   <li><a href="/https://interviewmania.com/download">Download</a></li>-->
-                      <li><a href="/https://interviewmania.com/about">About Us</a></li>
-                      <li><a href="/https://interviewmania.com/contact">Contact Us</a></li>
-                      <li><a href="/https://interviewmania.com/privacy">Privacy Policy</a></li>
-                      <li><a href="/https://interviewmania.com/terms-of-use">Terms Of Use</a></li>
-                      <li><a href="/https://interviewmania.com/copyright">Copyright Policy</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-xs-12">
-                    <h3><img data- src="https://interviewmania.com/web-resources/img/interviewmania-logo.png"
-                        class="lazyload" /><br /></h3>
-                    <ul style="margin-top:10px;">
-                      <li><a href="#">Interviewmania is the world's largest collection of interview and aptitude
-                          questions
-                          and provides a comprehensive guide to students appearing for placements in India's most
-                          coveted
-                          companies.</a></li>
-                    </ul>
+                    <li>
+                      <a href="/https://interviewmania.com/about">About Us</a>
+                    </li>
+                    <li>
+                      <a href="/https://interviewmania.com/contact"
+                        >Contact Us</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/https://interviewmania.com/privacy"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/https://interviewmania.com/terms-of-use"
+                        >Terms Of Use</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/https://interviewmania.com/copyright"
+                        >Copyright Policy</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                  <h3>
+                    <img
+                      data-
+                      src="https://interviewmania.com/web-resources/img/interviewmania-logo.png"
+                      class="lazyload"
+                    /><br />
+                  </h3>
+                  <ul style="margin-top: 10px">
+                    <li>
+                      <a href="#"
+                        >Interviewmania is the world's largest collection of
+                        interview and aptitude questions and provides a
+                        comprehensive guide to students appearing for placements
+                        in India's most coveted companies.</a
+                      >
+                    </li>
+                  </ul>
+                </div>
 
-
-                  </div>
-
-
-
-
-
-
-
-
-
-
-
-                  <hr>
-                  <div class="col-12">
-                    <div class="footer-text text-center">
-                      <ul class="social-icons">
-                        <li>
-                          <a class="facebook" href="https://www.facebook.com/interviewmania/" target="_blank"><i
-                              class="fa fa-facebook"></i></a>
-                        </li>
-                        <!--<li>
+                <hr />
+                <div class="col-12">
+                  <div class="footer-text text-center">
+                    <ul class="social-icons">
+                      <li>
+                        <a
+                          class="facebook"
+                          href="https://www.facebook.com/interviewmania/"
+                          target="_blank"
+                          ><i class="fa fa-facebook"></i></a>
+                      </li>     
+                      <!--<li>
                       <a class="twitter" href="https://www.facebook.com/interviewmania/" target="_blank"><i class="fa fa-twitter"></i></a>
                     </li>
                     <li>
@@ -632,25 +974,24 @@
                     <li>
                       <a class="instagram" href="https://www.youtube.com/channel/UC8hJQLvnUhyYmWWWp_ZOqJA" target="_blank"><i class="fa fa-youtube-play"></i></a>
                     </li>-->
-                      </ul>
-                      <p>Copyright 2018 InterviewMania.com - All rights reserved.</p>
-                      <div>
-
-                      </div>
-                    </div>
+                    </ul>
+                    <p>
+                      Copyright 2018 InterviewMania.com - All rights reserved.
+                    </p>
+                    <div></div>
                   </div>
                 </div>
               </div>
-              <!-- <div class="row section d-lg-none">
+            </div>
+            <!-- <div class="row section d-lg-none">
    <nav class="navbar fixed-bottom navbar-dark bg-light" style="padding-top: 1px; padding-bottom: 2px; border: 2px solid;">
       <a href="https://play.google.com/store/apps/details?id=com.amibba.interviewmania" title="Interview Mania Android App" style="margin-left: 20px;"><img alt=""  src="https://interviewmania.com/web-resources/img/interview-mania-playstore-icon.jpg" style="height: 69px;
     padding-top: 10px;"><span style="font-size:18px; color:#333; font-weight: 700;"> Install Interview Mania</span></a>
    </nav>
 </div> -->
-
-            </div>
-        </footer>
-      </div>
+          </div>
+        </div>
+      </footer>
       <!-- Content Area End -->
     </div>
     <!-- Page Wrapper End -->
@@ -671,14 +1012,14 @@
       $(document).ready(function () {
         //MixitUp
         $(function () {
-          $('#portfolio').mixItUp({
-            load: { filter: '.aptitude' }
+          $("#portfolio").mixItUp({
+            load: { filter: ".aptitude" },
           });
         });
       });
     </script>
     <script type="text/javascript">
-      $('.timer').countTo({
+      $(".timer").countTo({
         refreshInterval: 60,
         formatter: function (value, options) {
           return value.toFixed(options.decimals);
@@ -686,37 +1027,49 @@
       });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140457312-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-140457312-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'UA-140457312-1');
+      gtag("config", "UA-140457312-1");
     </script>
 
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
     <div class="footer-ads text-center d-lg-none">
-      <a href="https://play.google.com/store/apps/details?id=com.amibba.bubbleshootermagic" target="_blank"
-        id="banner-ad-1" style="display:none;">
-        <img src="\web-resources\img\ads\bubble-shooter-magic.png" width="100%" />
+      <a
+        href="https://play.google.com/store/apps/details?id=com.amibba.bubbleshootermagic"
+        target="_blank"
+        id="banner-ad-1"
+        style="display: none"
+      >
+        <img
+          src="\web-resources\img\ads\bubble-shooter-magic.png"
+          width="100%"
+        />
       </a>
-      <a href="https://play.google.com/store/apps/details?id=com.Amibba.Sudoku" target="_blank" id="banner-ad-2"
-        style="display:none;">
+      <a
+        href="https://play.google.com/store/apps/details?id=com.Amibba.Sudoku"
+        target="_blank"
+        id="banner-ad-2"
+        style="display: none"
+      >
         <img src="\web-resources\img\ads\sudoku-puzzle.png" width="100%" />
       </a>
     </div>
 
     <script>
-//var randomIndex = Math.floor(Math.random() * 3)+1;
-//var adsIndex = (randomIndex % 2) + 1;
-//$("#banner-ad-" + adsIndex).show();
-//$("#banner-ad-1").show();
+      //var randomIndex = Math.floor(Math.random() * 3)+1;
+      //var adsIndex = (randomIndex % 2) + 1;
+      //$("#banner-ad-" + adsIndex).show();
+      //$("#banner-ad-1").show();
     </script>
-
-</body>
-
-</html>       
-
-
+  </body>
+</html>

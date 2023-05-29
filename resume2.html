@@ -1,4 +1,4 @@
-<!DOCTYPE html>       
+<!DOCTYPE html>         
 <html lang="en">
 
 <head>
@@ -98,7 +98,7 @@
       display: block;
     }
 
-    .geta-app img {
+    .geta-app img {  
       float: left;
       padding-right: 7px;
       max-width: 100%;
@@ -154,6 +154,35 @@ img {
     font-size: 14px;
 }
 }   
+body{
+  position: relative;  
+}
+.popup{                           
+    position: fixed;
+    background: #EB586F;  
+    display: none;
+    width: 150px;     
+    height: 40px;
+    bottom: 10px;
+    right: 30px;
+    border-radius: 9999px;
+    padding: 10px 16px;                               
+    z-index: 1000;
+}
+
+.popup a{
+  color: #fff;  
+}
+.edit_Content{
+  font-weight: 500;
+  font-size: 15px;      
+}
+.close_icon{
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;    
+  cursor: pointer !important;     
+}
 
 
   </style>  
@@ -170,6 +199,8 @@ img {
 </head>
 
 <body>
+   
+
   <!-- Page Wrapper Start -->
   <div class="wrapper" style="padding-bottom:0px;">      
     <!-- Content Area Start -->
@@ -300,7 +331,7 @@ img {
   
 
         
-  <section id="about" class="section-padding">
+  <section id="about" class="section-padding">  
      <div class="container">
         <div class="row">
            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">      
@@ -315,19 +346,29 @@ img {
                  <div class="about-profile">   
                     <ul class="admin-profile">
                       <!-- icon-grid -->
-                       <li><span class="pro-title"> Name </span> <span contenteditable="true" class="pro-detail">Tom Saulnier</span></li>
-                       <li><span class="pro-title"> Age </span> <span contenteditable="true" class="pro-detail">25 Years</span></li>
-                       <li><span class="pro-title"> Experience </span> <span contenteditable="true" class="pro-detail">4 Years</span></li>
-                       <li><span class="pro-title"> Country </span> <span contenteditable="true" class="pro-detail">USA</span></li>
-                       <li><span class="pro-title"> Location </span> <span contenteditable="true" class="pro-detail">San Francisco, CA</span></li>
-                       <li><span class="pro-title"> e-mail </span> <span contenteditable="true" class="pro-detail"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="caafa7aba3a68aafb2aba7baa6afe4a9a5a7">[email&#160;protected]</a></span></li>
-                       <li><span class="pro-title"> Phone </span> <span contenteditable="true" class="pro-detail">+ (00) 123 456 789</span></li>
-                       <li><span class="pro-title"> Freelance </span> <span contenteditable="true" class="pro-detail">Available</span></li>
-                    </ul> 
+                       <li><span class="pro-title"> Name </span> <span  contenteditable="true" onclick="show('popup')" class="pro-detail">Tom Saulnier</span></li>             
+                       <li><span class="pro-title"> Age </span> <span contenteditable="true" onclick="show('popup')" class="pro-detail">25 Years</span></li>        
+                       <li><span class="pro-title"> Experience </span> <span contenteditable="true" onclick="show('popup')" class="pro-detail">4 Years</span></li>
+                       <li><span class="pro-title"> Country </span> <span contenteditable="true" onclick="show('popup')" class="pro-detail">USA</span></li>
+                       <li><span class="pro-title"> Location </span> <span contenteditable="true" onclick="show('popup')" class="pro-detail">San Francisco, CA</span></li>
+                       <li><span class="pro-title"> e-mail </span> <span contenteditable="true" onclick="show('popup')" class="pro-detail"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="caafa7aba3a68aafb2aba7baa6afe4a9a5a7">[email&#160;protected]</a></span></li>
+                       <li><span class="pro-title"> Phone </span> <span contenteditable="true" onclick="show('popup')" class="pro-detail">+ (00) 123 456 789</span></li>
+                       <li><span class="pro-title"> Freelance </span> <span contenteditable="true" onclick="show('popup')" class="pro-detail">Available</span></li>
+                    </ul>
+
+                     <!-- popup -->
+                   <div class="popup" id="popup">   
+                         <div class="popup_box d-flex justify-content-around">             
+                          <a class="edit_Content" href="#">Edit Content </a>          
+                          <span href="#" onclick="hide('popup')"><i class="bi bi-x close_icon"></i></span>       
+                        </div>  
+                    </div>      
+                   
                  </div>
-                 <!-- <a href="#" class="btn btn-common"><i class="fa-solid fa-paperclip"></i> Download Resume</a>   
-                 <a href="#" class="btn btn-danger"><i class="bi bi-chat-left-text"></i></i> Contact Me</a>     -->     
-              </div>
+               
+     
+
+              </div> 
            </div>
         </div>
      </div>
@@ -338,20 +379,20 @@ img {
     <div class="container">
        <div class="row">
            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">  
-              <h2 class="section-title sectionTitleAbout_me wow flipInX">About Me</h2>   
+              <h2 class="section-title sectionTitleAbout_me wow flipInX">About Me</h2>     
           </div>         
         </div>
         
         <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto" style="max-width: 800px;">       
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto" style="max-width: 800px;">        
             <div class="profile-wrapper wow fadeInRight">
-              <h3 contenteditable="true">Hi Guys!</h3>
-              <p contenteditable="true">Est diam venenatis arcu lacus ad. Duis quis eros. Cursus et rutrum eleifend sollicitudin lacinia justo id turpis. Nec convallis integer. Odio eget duis. Nulla aenean et. Blandit varius sollicitudin. Pellentesque leo primis neque urna magnis. Elit ut sollicitudin. Et est a nam dolores eget itaque sagittis et parturient duis est eleifend sociis rutrum odio viverra integer.</p>
+              <h3 contenteditable="true" onclick="show('popup')">Hi Guys!</h3>    
+              <p contenteditable="true" onclick="show('popup')">Est diam venenatis arcu lacus ad. Duis quis eros. Cursus et rutrum eleifend sollicitudin lacinia justo id turpis. Nec convallis integer. Odio eget duis. Nulla aenean et. Blandit varius sollicitudin. Pellentesque leo primis neque urna magnis. Elit ut sollicitudin. Et est a nam dolores eget itaque sagittis et parturient duis est eleifend sociis rutrum odio viverra integer.</p>
               
-              <div class="about-profile d-flex">   
+              <div class="about-profile d-flex">    
                 <a href="#" class="btn btn-common aboutMe_btn"><i class="fa-solid fa-paperclip"></i> Download Resume</a>         
                 <a href="#" class="btn btn-danger aboutMe_btn2"><i class="bi bi-chat-left-text"></i></i> Contact Me</a>    
-              </div>
+              </div>    
 
             </div>  
           </div>
@@ -360,7 +401,7 @@ img {
  </section>
 
   <section id="services" class="services section-padding">
-     <h2 class="section-title wow flipInX">What I do</h2>
+     <h2 class="section-title wow flipInX">What I do</h2>  
      <div class="container">
         <div class="row">
            <div class="col-md-6 col-lg-3 col-xs-12">
@@ -369,8 +410,8 @@ img {
                     <i class="bi bi-grid"></i>
                  </div>
                  <div class="services-content">
-                    <h3 contenteditable="true"><a href="#">Front-end Development</a></h3>
-                    <p contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                    <h3 contenteditable="true" onclick="show('popup')"><a href="#">Front-end Development</a></h3>
+                    <p contenteditable="true" onclick="show('popup')">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
                  </div>
               </div>
            </div>
@@ -380,8 +421,8 @@ img {
                     <i class="bi bi-stack"></i>
                  </div>
                  <div class="services-content">
-                    <h3 contenteditable="true"><a href="#">Graphic Design</a></h3>
-                    <p contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                    <h3 contenteditable="true" onclick="show('popup')"><a href="#">Graphic Design</a></h3>
+                    <p contenteditable="true" onclick="show('popup')">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
                  </div>
               </div>
            </div>
@@ -391,8 +432,8 @@ img {
                     <i class="bi bi-briefcase"></i>
                  </div>
                  <div class="services-content">
-                    <h3 contenteditable="true"><a href="#">Business Branding</a></h3>
-                    <p contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                    <h3 contenteditable="true" onclick="show('popup')"><a href="#">Business Branding</a></h3>
+                    <p contenteditable="true" onclick="show('popup')">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
                  </div>
               </div>
            </div>
@@ -402,8 +443,8 @@ img {
                     <i class="fa-regular fa-comments"></i>
                  </div>
                  <div class="services-content">
-                    <h3 contenteditable="true"><a href="#">Consultancy</a></h3>
-                    <p contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                    <h3 contenteditable="true" onclick="show('popup')"><a href="#">Consultancy</a></h3>
+                    <p contenteditable="true" onclick="show('popup')">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
                  </div>
               </div>
            </div>
@@ -418,28 +459,28 @@ img {
                  <ul class="timeline">
                     <li>
                        <i class="bi bi-mortarboard"></i>  
-                       <h2 contenteditable="true" class="timelin-title">Education</h2>
+                       <h2 class="timelin-title">Education</h2>  
                     </li>
                     <li>
                        <div class="content-text">
-                          <h3 contenteditable="true"  class="line-title">Bsc In CSE - Yale University</h3>
-                          <span contenteditable="true">2012 - 2016</span>
-                          <p contenteditable="true" class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
-                       </div>
-                    </li>
-                    <li>
-                       <div class="content-text">  
-                          <h3 contenteditable="true" class="line-title">Higher Secondary School - San Francisco College</h3>
-                          <span contenteditable="true">2010 - 2012</span>
-                          <p contenteditable="true" class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                          <h3 contenteditable="true" onclick="show('popup')" class="line-title">Bsc In CSE - Yale University</h3>
+                          <span contenteditable="true" onclick="show('popup')">2012 - 2016</span>
+                          <p contenteditable="true" onclick="show('popup')" class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
                        </div>
                     </li>
                     <li>
                        <div class="content-text">
-                          <h3 contenteditable="true" class="line-title">Secondary School - Labratory High School</h3>
-                          <span contenteditable="true">2005 - 2010</span>
-                          <p contenteditable="true" class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                          <h3 contenteditable="true" onclick="show('popup')" class="line-title">Higher Secondary School - San Francisco College</h3>
+                          <span contenteditable="true" onclick="show('popup')">2010 - 2012</span>
+                          <p contenteditable="true" onclick="show('popup')"  class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
                        </div>
+                    </li>
+                    <li>
+                       <div class="content-text">
+                          <h3 contenteditable="true" onclick="show('popup')" class="line-title">Secondary School - Labratory High School</h3>
+                          <span contenteditable="true" onclick="show('popup')">2005 - 2010</span>
+                          <p contenteditable="true" onclick="show('popup')" class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                       </div> 
                     </li>
                  </ul>
               </div>
@@ -449,27 +490,27 @@ img {
                  <ul class="timeline">
                     <li>
                         <i class="bi bi-briefcase"></i>
-                       <h2 contenteditable="true" class="timelin-title">Experience</h2>
+                       <h2 class="timelin-title">Experience</h2>
                     </li>
                     <li>
                        <div class="content-text">
-                          <h3 contenteditable="true" class="line-title">Art Director - Tesla Inc.</h3>
-                          <span contenteditable="true">Jan 2018 - Present</span>
-                          <p contenteditable="true" class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                          <h3 contenteditable="true" onclick="show('popup')" class="line-title">Art Director - Tesla Inc.</h3>
+                          <span contenteditable="true" onclick="show('popup')">Jan 2018 - Present</span>
+                          <p contenteditable="true" onclick="show('popup')" class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
                        </div>
                     </li>
                     <li>
                        <div class="content-text">
-                          <h3 contenteditable="true" class="line-title">UX/UI Designer - Samsung</h3>
-                          <span contenteditable="true">Nov 2016 - Dec 2017</span>
-                          <p contenteditable="true" class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                          <h3 contenteditable="true" onclick="show('popup')" class="line-title">UX/UI Designer - Samsung</h3>
+                          <span contenteditable="true" onclick="show('popup')">Nov 2016 - Dec 2017</span>
+                          <p contenteditable="true" onclick="show('popup')" class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
                        </div>
                     </li>
                     <li>
                        <div class="content-text">
-                          <h3 contenteditable="true" class="line-title">Intern UI Designer - UIdeck</h3>
-                          <span contenteditable="true">Mar 2015 - Oct 2016</span>
-                          <p contenteditable="true" class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                          <h3 contenteditable="true" onclick="show('popup')" class="line-title">Intern UI Designer - UIdeck</h3>
+                          <span contenteditable="true" onclick="show('popup')">Mar 2015 - Oct 2016</span>
+                          <p contenteditable="true" onclick="show('popup')" class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
                        </div>
                     </li>
                  </ul>
@@ -726,7 +767,25 @@ img {
     <script src="https://interviewmania.com/web-resources/js/main.js"></script>
     <!-- TODO: Need to put this inside ADMIN Tag  -->
     <script src="https://interviewmania.com/web-resources/js/im/admin/common.js"></script>
+    
+    <script>
+      function show() {
+         alert("alert box");    
+      }
 
+
+      $ = function(id) {
+  return document.getElementById(id);   
+}
+   
+var show = function(id) {
+	$(id).style.display ='block';   
+}
+var hide = function(id) {
+	$(id).style.display ='none';
+}
+
+    </script>
     <script>
       $(document).ready(function () {
         //MixitUp
@@ -781,7 +840,7 @@ $(".rotate4").click(function () {
       gtag('config', 'UA-140457312-1');
     </script>
 
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>        
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
     <div class="footer-ads text-center d-lg-none">
       <a href="https://play.google.com/store/apps/details?id=com.amibba.bubbleshootermagic" target="_blank"
